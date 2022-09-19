@@ -1,0 +1,64 @@
+.mainh1 {
+  padding-top: 15vh;
+}
+
+.mainP {
+  font-size: 1.5rem; 
+  color: var(--third-color);
+}
+
+.mainBanner {
+  width: 100vw;  
+}
+
+.selectedContainer {
+  border-bottom: solid 1px var(--main-color);  
+}
+
+.selectedText {  
+  align-self: flex-end;
+  color: var(--third-color);
+}
+
+.mainContactContainer {
+  align-content: space-between;
+}
+
+.asesoramientoContainer {
+  margin-bottom: 5rem;
+}
+
+.mainButton {
+  font-size: 1vw;
+  display: inline-block !important;
+  width: auto !important;
+  padding: 0.2rem 0.6rem;
+  border: solid 1px var(--main-color);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+/* Orgullo */
+.orgulloInfo {
+  border-radius: 1rem;
+  /* background-color: #1778bd1e; */
+}
+
+.orgulloInfo div{  
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: #1778bd1e;
+}
+
+@media screen and (max-width: 1200px) {
+  .mainP { 
+    font-size: 1.1rem;      
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainP { 
+    font-size: 1rem;      
+  }
+}
+

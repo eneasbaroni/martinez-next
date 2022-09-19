@@ -1,0 +1,42 @@
+.footer {
+  background-color: rgb(0, 0, 29);
+  background-color: var(--main-bg);
+  /* border-top: solid 1px var(--main-color); */
+  padding: 0.5rem 3rem;  
+  height: 6rem; 
+}
+
+.footer p {
+  font-size: 0.9rem; 
+  margin: 0.3vw;
+}
+
+.footer div, .footer p {
+  color: white;
+}
+
+.mediaIcon, .mailIcon {
+  height: 2rem ;  
+}
+
+@media screen and (max-width: 1200px) {
+  .footer p  { 
+    font-size: 0.7rem;      
+  }
+
+  .mediaIcon, .mailIcon {
+    height: 1.5rem ;  
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer p  { 
+    font-size: 0.6rem;      
+  }
+  .footer {
+    padding: 0 1rem;     
+  }
+  .mediaIcon, .mailIcon {
+    height: 1.3rem ;  
+  }
+}

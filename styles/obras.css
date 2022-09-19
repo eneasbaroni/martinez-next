@@ -1,0 +1,67 @@
+.obrasContainer {
+  margin-top: 15vh;
+  /* margin-bottom: 20vh; */
+}
+
+.obrasTitle {
+  border-bottom: solid 1px var(--main-color);  
+}
+
+.obraContainer {
+  padding: 1rem;
+  border-bottom: solid 1px var(--main-color);      
+}
+
+.bLeft {
+  border-left: solid 1px var(--main-color);
+}
+
+.obraImage {
+  height: 30vw;
+  object-fit: cover;
+}
+
+.obraVer {
+  font-size: 1rem; 
+  cursor: pointer;
+  align-self: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.obraVer:hover {
+  transform: translate(0.4vw); 
+}
+
+.comentarios {
+  margin-top: 10vh;
+  padding-bottom: 5rem;
+  border-bottom: solid 1px var(--main-color);
+}
+
+.mediaButton {
+  font-size: 1rem;
+  display: inline-block !important;
+  width: auto !important;
+  padding: 0.2rem 0.6rem;
+  border: solid 1px var(--main-color);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.mediaButton:hover {
+  transform: translate(0.4vw); 
+}
+
+@media screen and (max-width: 1200px) {
+  .obraVer, .mediaButton  { 
+    font-size: 0.8rem;      
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .obraVer, .mediaButton  { 
+    font-size: 0.7rem;      
+  }
+}
+

@@ -1,0 +1,62 @@
+.workContainer {
+  border-bottom: solid 1px var(--main-color);
+}
+
+.dataContainer {  
+  align-content: space-between;  
+}
+
+.obraNombre {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.obraTipo, .obraAnio {
+  font-size: 0.85rem;
+  color: var(--third-color);
+}
+
+.workVer {
+  font-size: 1rem;
+  display: inline-block !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 0.2rem 0.6rem;
+  border: solid 1px var(--main-color);
+  border-radius: 1rem;
+  cursor: pointer;
+  align-self: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.workVer:hover {
+  transform: translate(0.4vw); 
+}
+
+.imagesContainer {
+  border-left: solid 1px var(--main-color);
+}
+
+.obraImg {
+  padding: 0.5rem;
+  height: 60vh;  
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .obraNombre { 
+    font-size: 1.1rem;      
+  }
+  .obraTipo, .obraAnio, .workVer {
+    font-size: 0.8rem;    
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .obraNombre { 
+    font-size: 1rem;      
+  }
+  .obraTipo, .obraAnio, .workVer {
+    font-size: 0.7rem;    
+  }
+}

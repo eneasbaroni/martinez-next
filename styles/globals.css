@@ -1,26 +1,107 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+:root {  
+  --main-color: #1778bd;
+  --main-color: #010055;
+  --second-color: white;
+  --third-color: #1778bd;  
+  --main-bg: #1778bd;  
+  --second-bg: #010055;  
 }
 
 * {
+  list-style: none;  
+  font-family: 'Montserrat', sans-serif;  
+  font-size: 16px;  
+  margin: 0;
+  padding: 0;  
   box-sizing: border-box;
+  color: var(--main-color);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
+.v {
+  border: 1px solid var(--main-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-color);  
+}
+
+a:hover {
+  color: var(--main-color);
+}
+
+label, input, .form-control { 
+  font-size: 1rem;  
+  /* line-height: 1.5rem;
+  letter-spacing: -0.08rem; */
+  margin: 0;                         
+  padding: 0;  
+  font-weight: 400;  
+  color: var(--main-color);
+}
+
+p, label, input, .form-control { 
+  font-size: 1rem;  
+  /* line-height: 1.5rem;
+  letter-spacing: -0.08rem; */
+  margin: 0;                         
+  padding: 0;  
+  font-weight: 400;  
+  color: var(--main-color);
+}
+
+.divContainer {
+  padding-top: calc(0.5rem + 30px + 1rem);  
+  /* ver altura  */  
+  min-height: calc(100vh);
+  transition: all 0.5s ease-in-out;
+  /* background: rgb(0, 0, 29) */
+  /* background-image: radial-gradient(#212121 2%, #ffffff 2%);
+  background-position: 0 0;
+  background-size: 80px 80px;  */
+}
+
+.h1 {   
+  font-size: 5.5vw; 
+  font-weight: 500;
+  line-height: 1em;
+  /* line-height: 1em;
+  font-weight: 400;  */
+}
+
+.h2 { 
+  font-size: 3vw; 
+  font-weight: 500;
+  line-height: 1.1em;
+}
+
+input {
+  color: var(--main-color);
+}
+
+.hidden {
+  visibility: hidden; 
+  opacity: 0;
+  transition: all 800ms ease-out;
+}
+
+.App {  
+  min-height: 100vh;  
+}
+
+@media screen and (max-width: 1200px) {
+  p, label, input, .form-control { 
+    font-size: 0.8rem;      
   }
 }
+
+@media screen and (max-width: 768px) {
+  p, label, input, .form-control { 
+    font-size: 0.7rem;      
+  }
+}
+
+
+
+
+
