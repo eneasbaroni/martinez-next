@@ -6,6 +6,7 @@ import "../styles/selectedWork.css"
 import "../styles/home.css" 
 import "../styles/obras.css" 
 import "../styles/nosotros.css" 
+import "../styles/contacto.css" 
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 

@@ -11,10 +11,13 @@
 .equipoContainer {
   margin-top: 1rem; 
   border-bottom: solid 1px var(--main-color); 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1rem; 
 }
 
-.equipoItem {
-  padding: 1rem;
+.equipoItem {  
+  padding: 1rem 0;
 }
 
 .equipoImg{

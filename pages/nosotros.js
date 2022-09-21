@@ -58,11 +58,11 @@ const Nosotros = ({equipo}) => {
             <p className="h2">NOSOTROS</p>            
           </div>
 
-          <div className="equipoContainer col-12 row">
+          <div className="equipoContainer">
             {equipo.map ((el, i) => {
                 return (
-                  <div className="equipoItem col-12 col-md-4 row" key={i} >
-                    <div className="equipoImg col-12 row">
+                  <div className="equipoItem" key={i} >
+                    <div className="equipoImg ">
                       <Image layout="fill" objectFit="cover" src={el.img} alt={el.nombre} />
                     </div>
                     <div className="equipoInfo col-12 row">
@@ -70,7 +70,7 @@ const Nosotros = ({equipo}) => {
                       <p className="equipoP">{el.cargo}</p>
                       <p className="equipoP">{el.comentario}</p>
                     </div>
-                  </div>
+                  </div> 
                 )
             })}
           </div>

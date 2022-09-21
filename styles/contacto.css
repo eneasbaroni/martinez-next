@@ -1,0 +1,15 @@
+.main {
+  margin-top: 15vh;
+  /* margin-bottom: 20vh; */
+  border-bottom: solid 1px var(--main-color);
+}
+
+.mainTitle {
+  border-bottom: solid 1px var(--main-color);  
+}
+
+.sectionContainer {  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+   
+}
