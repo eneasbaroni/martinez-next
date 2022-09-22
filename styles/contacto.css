@@ -10,6 +10,85 @@
 
 .sectionContainer {  
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-   
+  grid-template-columns: repeat(4, 1fr);      
+}
+
+
+
+.contacDataContainer {
+  grid-column: 1 / 3;  
+}
+
+.contacData {
+  padding-bottom: 0.5rem;  
+}
+
+.contacTitle  {
+  padding-bottom: 1rem; 
+  font-size: 1.2rem;
+  font-weight: 500; 
+}
+
+.formulario {
+  grid-column: 3 / span 2;    
+}
+
+form .formTitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.formGroup {
+  width: 100%;      
+  padding-top: 0.5rem; 
+  border-bottom: 1px solid var(--main-color);  
+}
+
+.formulario input, .formulario label { 
+  padding: 0.3rem 0;   
+  height: auto;
+  border: none;  
+}
+
+.formulario label {    
+  width: 100%;
+  opacity: 0;
+  font-size: 0.9rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.formulario input {    
+  width: 100%;  
+}
+
+.formulario input::placeholder {  
+  color: var(--third-color);
+}
+
+.formulario input:focus {  
+  outline: none;
+}
+
+.formulario:has(input:focus) .formGroup:hover label{  
+  opacity: 1;
+}
+
+/* .formulario:has(input:focus) input:not(:focus) {  
+  outline: 1px solid red;
+} */
+
+.enviarBtn, .enviarBtnDesabilitado {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 2rem;
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.sectionContainer:has(.formulario) {
+  margin-bottom: 2.1rem;
 }

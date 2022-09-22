@@ -40,7 +40,7 @@ const Header = () => {
   return (
     <div className="container-fluid row">
       <div className="col-12 header justify-content-between align-items-center">
-        <Link href={"/"}  className="navItem"><Image src='/images/icon.svg' alt="icon" height={30} width={60} className="icon"/></Link>
+        <Link href={"/"}  className="navItem"><><Image src='/images/icon.svg' alt="icon" height={30} width={60} className="icon"/></></Link>
         {windowSize < 576 
           ?
             <img className="menuIcon" width={25} src='/images/menu.svg' alt="menu" onClick={openMenu}/>      
@@ -58,7 +58,7 @@ const Header = () => {
             <div className="headerLateral" style={{left: position, transition:"all 1s ease-in-out"}}>
               <div className="navBarLateral row">
                 <div className="col-2 iconLateral d-flex justify-content-center">
-                  <Link href={"/"}  className="navItem"><Image src='/images/icon.svg' alt="icon" height={30} width={60} className="icon"></Image></Link>
+                  <Link href={"/"}  className="navItem"><><Image src='/images/icon.svg' alt="icon" height={30} width={60} className="icon"/></></Link>
                 </div>
                 <div className="col-6 navBarLateralContainer">
                   <div className="text-end closeMenu" onClick={closeMenu}>X</div>

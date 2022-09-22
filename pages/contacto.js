@@ -2,19 +2,19 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Layout from "../components/Layout/Layout"
 
-/* const Input = ({placeholder, name, label, foo}) => { 
+const Input = ({placeholder, name, label, foo}) => { 
   return (
-    <>
-        <label htmlFor={name}>{label}</label>
-        <input required placeholder={placeholder} className="userInput py-1 ps-1 col-12 mb-3" type="text" name={name} id={name} onChange={foo}></input>
-    </>
+    <div className="formGroup">
+        {<label htmlFor={name}>{label}</label>}
+        <input required placeholder={placeholder} className="userInput" type="text" name={name} id={name} onChange={foo}></input>
+    </div>
   )
-} */
+}
 
 
 const Contacto = () => {
 
-  /* const [contact, setContact] = useState({
+  const [contact, setContact] = useState({
     nombre:"",
     apellido:"",
     telefono:"",
@@ -40,7 +40,7 @@ const Contacto = () => {
   const sendData = (e) => {
     e.preventDefault();   
     console.log('SUCCESS!', contact);    
-  } */
+  }
 
 /*   const sendData = (e) => {
     e.preventDefault();    
@@ -81,26 +81,33 @@ const Contacto = () => {
     <Layout>
       <main className="divContainer row" style={{opacity: `${opacity}`}}>
         <div className="main align-items-end col-12 px-md-5 px-3 row">
-          <div className="mainTitle col-12 row">
+          {/* <div className="mainTitle col-12 row">
             <p className="h2">CONTACTANOS</p>            
-          </div>
+          </div> */}
 
           <div className="sectionContainer">
-       {/*    <form className="formulario col-12 col-md-8" onSubmit={sendData}>
+            <div className='contacDataContainer'>
+            <h3 className="contacTitle">Contacto</h3>
+            <p className="contacData">San Juan 462 (Local 1) - Villa Maria - CBA</p>
+            <p className="contacData">3535085782 - 3534128373</p>
+            <p className="contacData">info@martinezrubiano.com.ar</p>
+            </div>
             
-            <legend className="mb-2"><strong>Formulario de Contacto</strong></legend>        
-            <Input placeholder="Nombre" name="nombre" label="Nombre" foo={handleInputChange}/>        
-            <Input placeholder="Apellido" name="apellido" label="Apellido" foo={handleInputChange}/>
-            <Input placeholder="Telefono (sin guiones, sin 0 y sin 15)" name="telefono" label="Telefono" foo={handleInputChange}/>
-            <Input placeholder="E-mail" name="email" label="Email" foo={handleInputChange}/> 
-            <Input placeholder="Dejanos un Mensaje" name="comentario" label="Dejanos un mensaje" foo={handleInputChange}/> 
+            <form className="formulario" onSubmit={sendData}>
+              
+              <legend className="formTitle">Formulario de Contacto</legend>        
+              <Input placeholder="Nombre" name="nombre" label="Nombre" foo={handleInputChange}/>        
+              <Input placeholder="Apellido" name="apellido" label="Apellido" foo={handleInputChange}/>
+              <Input placeholder="Telefono (sin guiones, sin 0 y sin 15)" name="telefono" label="Telefono" foo={handleInputChange}/>
+              <Input placeholder="E-mail" name="email" label="Email" foo={handleInputChange}/> 
+              <Input placeholder="Dejanos un Mensaje" name="comentario" label="Mensaje" foo={handleInputChange}/> 
 
-            {nombreRegex.test(contact.nombre) && apellidoRegex.test(contact.apellido) && telefonoRegex.test(contact.telefono) && emailRegex.test(contact.email) && comentarioRegex.test(contact.descripcion)
-              ?<button className="col-2 enviarBtn" type="submit">Enviar</button>        
-              :<button className="col-2 enviarBtnDesabilitado" disabled type="submit">Enviar</button>
-            }       
-        
-          </form>  */}    
+              {nombreRegex.test(contact.nombre) && apellidoRegex.test(contact.apellido) && telefonoRegex.test(contact.telefono) && emailRegex.test(contact.email) && comentarioRegex.test(contact.descripcion)
+                ?<button className="enviarBtn" type="submit">Enviar</button>        
+                :<button className="enviarBtnDesabilitado" disabled type="submit">Enviar</button>
+              }       
+          
+            </form>     
           
           </div>
 
