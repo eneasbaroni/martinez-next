@@ -11,6 +11,22 @@
   width: 100vw;  
 }
 
+.mainTitle {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* mainTitle first child */
+.mainTitle > *:first-child {
+  grid-column: 1 / span 4;
+}
+/* mainTitle second child */
+.mainTitle > *:nth-child(2) {
+  grid-column: 5 / span 8;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .selectedText {  
   align-self: flex-end;
   color: var(--third-color);

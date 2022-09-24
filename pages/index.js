@@ -45,13 +45,13 @@ const Home = ({obrasSeleccionadas}) => {
         <h1 className="h1 px-md-5 px-3 mainh1">DESARROLLAMOS PROYECTOS LLAVE EN MANO ACORDES A TUS NECESIDADES</h1>
         <p className="px-md-5 px-3 mb-5 mainP">Desarollando el sueño de la casa propia desde 2000</p>
         <img src='/images/mainBanner.png' alt="baner" className="mainBanner"></img>
-        <div className="col-12 px-md-5 px-3 row">
-          <div className="mainTitle col-12 row pt-5">
-            <div className="col-4">
+        <div className="sectionContainer px-md-5 px-3 row">
+          <div className="mainTitle pt-5">
+            <div>
               <p className="h2">OBRAS</p>
               <p className="h2">SELECCIONADAS</p>
             </div>
-            <div className="col-8 row justify-content-end ">          
+            <div>          
               <p className="col-4 selectedText pb-3">Contamos con la experiencia,  de un proceso eficiente y el coraje para afrontar cualquier reto con la alegría, responsabilidad y la determinación que nos define.</p>          
             </div>
           </div>

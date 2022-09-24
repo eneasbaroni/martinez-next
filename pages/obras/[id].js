@@ -37,7 +37,7 @@ export const getStaticProps = async ({params}) => {
   }
 }
 
-const obra = ( {obra} ) => {
+const Obra = ( {obra} ) => {
 
   const [opacity, setOpacity] = useState(0)
 
