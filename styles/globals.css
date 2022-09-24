@@ -3,8 +3,13 @@
   --main-color: #010055;
   --second-color: white;
   --third-color: #1778bd;  
-  --main-bg: #1778bd;  
+  --main-bg: #ecf2f7;  
   --second-bg: #010055;  
+  --main-border: 2px solid var(--second-color)
+}
+
+body {
+  background-color: var(--main-bg);
 }
 
 * {
@@ -41,7 +46,7 @@ label, input, .form-control {
 }
 
 p, label, input, .form-control { 
-  font-size: 1rem;  
+  font-size: .95rem;  
   /* line-height: 1.5rem;
   letter-spacing: -0.08rem; */
   margin: 0;                         
@@ -51,14 +56,30 @@ p, label, input, .form-control {
 }
 
 .divContainer {
-  padding-top: calc(0.5rem + 30px + 1rem);  
-  /* ver altura  */  
-  min-height: calc(100vh - 30px - 96px);
-  transition: all 0.5s ease-in-out;
-  /* background: rgb(0, 0, 29) */
-  /* background-image: radial-gradient(#212121 2%, #ffffff 2%);
-  background-position: 0 0;
-  background-size: 80px 80px;  */
+  /* ver margin top en otras querys */
+  margin-top: calc(30px + 8px + 1px);  
+  /* ver altura en otras querys */
+  min-height: calc(100vh - 39px - 229px);
+  transition: all 0.5s ease-in-out; 
+}
+
+.main {
+  margin-top: 15vh;
+  /* margin-bottom: 20vh; */ 
+}
+
+.mainTitle {
+  border-bottom: var(--main-border);  
+}
+
+.sectionContainer {  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); 
+  gap: 1rem;     
+}
+
+.borderBottom {
+  border-bottom: var(--main-border);;  
 }
 
 .h1 {   

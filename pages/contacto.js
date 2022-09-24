@@ -80,7 +80,7 @@ const Contacto = () => {
 
     <Layout>
       <main className="divContainer row" style={{opacity: `${opacity}`}}>
-        <div className="main align-items-end col-12 px-md-5 px-3 row">
+        <div className="main contactoContainer align-items-end col-12 px-md-5 px-3 row">
           {/* <div className="mainTitle col-12 row">
             <p className="h2">CONTACTANOS</p>            
           </div> */}

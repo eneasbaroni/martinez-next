@@ -1,4 +1,6 @@
-const SelectedWork = ({obra, id}) => {
+import Link from "next/link"
+
+const SelectedWork = ({obra}) => {
   return (
     <div className="row workContainer">
       <div className="col-4 dataContainer row pb-1">
@@ -7,7 +9,7 @@ const SelectedWork = ({obra, id}) => {
           <div className="obraTipo">{obra.tipo}</div>
           <div className="obraAnio">{obra.año}</div>
         </div>
-        <div className="col-12 workVer">Ver Galeria →</div>
+        <Link href={`/obras/${obra.id}`}><div className="col-12 workVer">Ver Galeria →</div></Link>
       </div>
       <div className="col-8 row imagesContainer">
         <img src={obra.images[0]} alt="Imagen de la Obra" className="obraImg col-5"></img>

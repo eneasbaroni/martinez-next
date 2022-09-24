@@ -1,5 +1,5 @@
 .workContainer {
-  border-bottom: solid 1px var(--main-color);
+  border-bottom: var(--main-border);
 }
 
 .dataContainer {  
@@ -34,7 +34,7 @@
 }
 
 .imagesContainer {
-  border-left: solid 1px var(--main-color);
+  border-left: var(--main-border);
 }
 
 .obraImg {

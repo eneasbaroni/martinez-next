@@ -41,12 +41,12 @@ const Home = ({obrasSeleccionadas}) => {
   
   return (
     <Layout>
-      <main className="divContainer row" style={{opacity: `${opacity}`}}>
-        <h1 className="col-12 h1 px-md-5 px-3 mainh1">DESARROLLAMOS PROYECTOS LLAVE EN MANO ACORDES A TUS NECESIDADES</h1>
-        <p className="col-12  px-md-5 px-3 mb-5 mainP">Desarollando el sueño de la casa propia desde 2000</p>
+      <main className="divContainer" style={{opacity: `${opacity}`}}>
+        <h1 className="h1 px-md-5 px-3 mainh1">DESARROLLAMOS PROYECTOS LLAVE EN MANO ACORDES A TUS NECESIDADES</h1>
+        <p className="px-md-5 px-3 mb-5 mainP">Desarollando el sueño de la casa propia desde 2000</p>
         <img src='/images/mainBanner.png' alt="baner" className="mainBanner"></img>
         <div className="col-12 px-md-5 px-3 row">
-          <div className="selectedContainer col-12 row pt-5">
+          <div className="mainTitle col-12 row pt-5">
             <div className="col-4">
               <p className="h2">OBRAS</p>
               <p className="h2">SELECCIONADAS</p>
@@ -58,7 +58,7 @@ const Home = ({obrasSeleccionadas}) => {
           
           {obrasSeleccionadas.map ((el, i) => {
             return (
-              <SelectedWork obra={el} key={i} id={i}/>
+              <SelectedWork obra={el} key={i}/>
             )
           })}
           

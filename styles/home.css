@@ -11,10 +11,6 @@
   width: 100vw;  
 }
 
-.selectedContainer {
-  border-bottom: solid 1px var(--main-color);  
-}
-
 .selectedText {  
   align-self: flex-end;
   color: var(--third-color);
@@ -28,15 +24,15 @@
   margin-bottom: 5rem;
 }
 
-.mainButton {
+/* .mainButton {
   font-size: 1vw;
   display: inline-block !important;
   width: auto !important;
   padding: 0.2rem 0.6rem;
-  border: solid 1px var(--main-color);
+  border: solid 1px red;
   border-radius: 1rem;
   cursor: pointer;
-}
+} */
 
 /* Orgullo */
 .orgulloInfo {

@@ -1,0 +1,41 @@
+.socialsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;  
+}
+
+.mediaIcon img {   
+  filter: invert(40%) sepia(92%) saturate(967%) hue-rotate(177deg) brightness(77%) contrast(88%);
+}
+
+.mediaIcon  {  
+  border: var(--main-border);
+  height: auto;  
+  margin: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  align-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mediaIcon img {
+  width: 1.5rem;    
+  height: auto;
+}
+
+/* @media screen and (max-width: 1200px) {
+  .mediaIcon {
+    height: 1.5rem ;  
+  }
+}
+
+@media screen and (max-width: 768px) { 
+  .mediaIcon{
+    height: 1.3rem ;  
+  }
+}  */
