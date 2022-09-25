@@ -46,10 +46,6 @@
   align-content: space-between;
 }
 
-.asesoramientoContainer {
-  margin-bottom: 5rem;
-}
-
 /* .mainButton {
   font-size: 1vw;
   display: inline-block !important;
@@ -62,6 +58,7 @@
 
 /* Orgullo */
 .orgulloContainer {
+  padding: 1rem 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }

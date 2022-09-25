@@ -38,6 +38,10 @@
   text-align: center;
 }
 
+.equipo .h2 {
+  padding-top: 1rem !important;
+}
+
 .comentarios {
   margin-top: 10vh;
   padding-bottom: 5rem;
@@ -83,6 +87,7 @@
   }  
 
   .comentarios {
+    margin-top: 1rem;
     padding-bottom: 1rem;
     border-bottom: none;      
   }

@@ -69,7 +69,7 @@ const Nosotros = ({equipo}) => {
             
           </div>
 
-          <div className="sectionContainer borderBottom">
+          <div className="sectionContainer equipo borderBottom">
 
             <p className="h2 equipoContainerTitle">EQUIPO</p>
 

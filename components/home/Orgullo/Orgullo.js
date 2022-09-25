@@ -1,6 +1,6 @@
 const Orgullo = () => {
   return (
-    <div className="orgulloContainer row my-5 justify-content-between">
+    <div className="orgulloContainer row justify-content-between">
       <div className="orgulloTitle">
         <p className="h2">ORGULLOSOS DEL TRABAJO QUE REALIZAMOS</p>
         <p>Nuestra principal prioridad es la felicidad y conformidad de nuestros clientes. Es por ello que estamos constantemente buscando las soluciones mas optimas para que se adapten a la necesidad de cada uno de los usuarios</p>
