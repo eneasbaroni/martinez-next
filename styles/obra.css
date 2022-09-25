@@ -82,12 +82,13 @@
     /* padding: 0; */  
   }
 
-  .infoItem, .infoDescription {    
+  .infoItem, .infoDescription, .obraBanner  {    
     width: 80vw;    
   }
 
   .backToObras {
     font-size: 0.8rem;
   }
+   
 }
   
