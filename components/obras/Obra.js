@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
 
@@ -14,7 +15,7 @@ const Obra = ({obra, id}) => {
   
   return (
     <div className={`row obraContainer ${border}`}>
-      <img src={obra.images[0]} alt="Imagen de la Obra" className="obraImage col-12"></img>    
+      <div  className="obraImage col-12"><Image src={obra.images[0]} objectFit='cover' layout='fill' alt="Imagen de la Obra"/></div>
       <div className="obraNombre col-12">{obra.nombre}</div>
       <div className="obraTipo col-12">{obra.tipo}</div>
       <div className="obraAnio col-6">{obra.año}</div>

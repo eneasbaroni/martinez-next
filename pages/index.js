@@ -1,7 +1,8 @@
 import Layout from "../components/Layout/Layout"
 import SelectedWork from "../components/home/SelectedWork/SelectedWork";
 import Orgullo from "../components/home/Orgullo/Orgullo";
-import {server} from '../config/index'
+import Image from 'next/image'
+
 
 //TENGO QUE TRAER LA DB PORQUE EN BUILD NO FUNCIONA LA API
 import db from '../db/data'
@@ -44,9 +45,9 @@ const Home = ({obrasSeleccionadas}) => {
       <main className="divContainer" style={{opacity: `${opacity}`}}>
         <h1 className="h1 px-md-5 px-3 mainh1">DESARROLLAMOS PROYECTOS LLAVE EN MANO ACORDES A TUS NECESIDADES</h1>
         <p className="px-md-5 px-3 mb-5 mainP">Desarollando el sueño de la casa propia desde 2000</p>
-        <img src='/images/mainBanner.png' alt="baner" className="mainBanner"></img>
-        <div className="sectionContainer px-md-5 px-3 row">
-          <div className="mainTitle pt-5">
+        <div className="mainBanner"><Image layout="fill" src='/images/mainBanner.png' alt="baner"/></div>
+        <div className="px-md-5 px-3 row">
+          <div className="mainTitle pt-5"> 
             <div>
               <p className="h2">OBRAS</p>
               <p className="h2">SELECCIONADAS</p>

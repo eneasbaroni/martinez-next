@@ -16,16 +16,21 @@
   border: var(--main-border);
   height: auto;  
   margin: 0.5rem;
-  padding: 0.5rem;
+  padding: 1rem;
   display: flex;
   align-content: center;
   border-radius: 50%;
   cursor: pointer;
+  position: relative;
 }
 
-.mediaIcon img {
-  width: 1.5rem;    
-  height: auto;
+.mediaIcon{
+  width: 2rem; 
+  height: 2rem;    
+}
+
+.mediaIcon img{
+  padding: 0.25rem !important;     
 }
 
 /* @media screen and (max-width: 1200px) {

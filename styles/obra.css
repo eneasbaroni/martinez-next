@@ -1,11 +1,21 @@
 .obraBanner {
   width: 40vw;  
-  max-height: 80vh;
-  object-fit: cover;
+  height: 80vh;
+  position: relative;  
   margin: auto;
   /* height: 50vh;
   object-fit: contain; */
   margin-top: 1rem;
+}
+
+.obraImage {
+  position: relative;
+}
+
+
+.obraTitle {
+  text-align: center;
+  border-bottom:  var(--main-border);
 }
 
 .infoObraContainer {

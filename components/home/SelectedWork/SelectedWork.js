@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 
 const SelectedWork = ({obra}) => {
@@ -12,8 +13,8 @@ const SelectedWork = ({obra}) => {
         <Link href={`/obras/${obra.id}`}><div className="col-12 workVer">Ver Galeria →</div></Link>
       </div>
       <div className="col-8 row imagesContainer">
-        <img src={obra.images[0]} alt="Imagen de la Obra" className="obraImg col-5"></img>
-        <img src={obra.images[1]} alt="Imagen de la Obra" className="obraImg col-7"></img>        
+        <div className="obraImg col-5"><Image src={obra.images[0]} layout='fill' alt="Imagen de la Obra"/></div>
+        <div className="obraImg col-7"><Image src={obra.images[1]} layout='fill' alt="Imagen de la Obra"/></div>
       </div>
 
     </div>

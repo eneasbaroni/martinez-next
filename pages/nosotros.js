@@ -59,7 +59,7 @@ const Nosotros = ({equipo}) => {
           </div>
 
           
-          <img src='/images/nosotrosBanner.jpg' alt="baner" className="mainBanner"></img>
+          <div  className="mainBanner"><Image src='/images/nosotrosBanner.jpg' layout="fill" alt="baner"/></div>
 
           <div className="sectionContainer mision">
             <div>

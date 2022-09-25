@@ -37,10 +37,14 @@
   border-left: var(--main-border);
 }
 
-.obraImg {
-  padding: 0.5rem;
+.obraImg {  
   height: 60vh;  
   object-fit: cover;
+  position: relative;
+}
+
+.obraImg img {
+  padding: 0.5rem !important;;  
 }
 
 @media screen and (max-width: 1200px) {

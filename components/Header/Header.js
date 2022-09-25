@@ -43,7 +43,7 @@ const Header = () => {
         <Link href={"/"}  className="navItem"><><Image src='/images/icon.svg' alt="icon" height={30} width={60} className="icon"/></></Link>
         {windowSize < 576 
           ?
-            <img className="menuIcon" width={25} src='/images/menu.svg' alt="menu" onClick={openMenu}/>      
+            <div className="menuIcon"><Image className="menuIcon" width={25} height={25} src='/images/menu.svg' alt="menu" onClick={openMenu}/></div>      
           :
             <>
               <Link href={"/"}  className="navItem">INICIO</Link>

@@ -54,8 +54,8 @@ const Obra = ( {obra} ) => {
     <Layout>  
       <main className="divContainer row" style={{opacity: `${opacity}`}}>
         <div className=" px-md-5 px-3 row">
-          <img src={obra.images[0]} alt="baner" className="obraBanner"></img>
-          <div className="mainTitle text-center">
+          <div  className="obraBanner"><Image src={obra.images[0]} objectFit="cover" alt="baner" layout='fill'/></div>
+          <div className="obraTitle">
             <p className="h2">{obra.nombre.toUpperCase()}</p>            
           </div>
 
@@ -93,4 +93,4 @@ const Obra = ( {obra} ) => {
     
 }
 
-export default obra
+export default Obra
