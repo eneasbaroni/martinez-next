@@ -7,7 +7,7 @@ const Obra = ({obra, id}) => {
 
   useEffect(() => {
     if (id === 1 || id === 4 || id === 7) {
-      setBorder("bright")
+      setBorder("")
     }else {
       setBorder("bLeft")
     }// eslint-disable-next-line      

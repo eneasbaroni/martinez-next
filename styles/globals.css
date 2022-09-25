@@ -92,6 +92,7 @@ p, label, input, .form-control {
 
 .h2 { 
   font-size: 3vw; 
+  font-size:calc(12px + 1.5vw);
   font-weight: 500;
   line-height: 1.1em;
 }

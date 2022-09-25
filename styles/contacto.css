@@ -4,8 +4,6 @@
   align-content: center;
 }
 
-
-
 .contacDataContainer {
   grid-column: 1 / span 6;  
 }
@@ -88,4 +86,15 @@ form .formTitle {
 
 .sectionContainer:has(.formulario) {
   margin-bottom: 2.1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .contacDataContainer {
+    grid-column: 1 / span 12;  
+  }
+
+  .formulario {
+    grid-column: 1 / span 12;    
+  }
+
 }

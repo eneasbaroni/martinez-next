@@ -1,9 +1,12 @@
 .workContainer {
   border-bottom: var(--main-border);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
 .dataContainer {  
-  align-content: space-between;  
+  align-content: space-between;
+  grid-column: 1 / span 4;  
 }
 
 .obraNombre {
@@ -35,10 +38,22 @@
 
 .imagesContainer {
   border-left: var(--main-border);
+  grid-column: 5 / span 8;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* .imagesContainer first child */
+.imagesContainer > *:first-child {
+  grid-column: auto / span 5;
+}
+
+.imagesContainer > *:nth-child(2) {
+  grid-column: auto / span 7;   
 }
 
 .obraImg {  
-  height: 60vh;  
+  height: 25vw;  
   object-fit: cover;
   position: relative;
 }
@@ -62,5 +77,37 @@
   }
   .obraTipo, .obraAnio, .workVer {
     font-size: 0.7rem;    
+  }
+
+  .obraImg {  
+    height: 35vw;  
+    object-fit: cover;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  
+  .dataContainer {  
+    align-content: space-between;
+    grid-column: 1 / span 12;  
+  }
+
+  .imagesContainer {
+    border-left: none;
+    grid-column: 1 / span 12;
+  }
+
+  .workVer {
+    display: none !important;
+  }
+
+  .imagesContainer {
+    gap: 0.5rem;
+  }
+
+  .obraImg img {
+    padding: 0 !important; 
+    padding-bottom: 0.5rem !important; 
   }
 }

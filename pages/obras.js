@@ -44,15 +44,14 @@ const Obras = ({obras}) => {
       <main className="divContainer row" style={{opacity: `${opacity}`}}>
       <div className="main col-12 px-md-5 px-3 row">
         <div className="mainTitle">
-          <p className="h2">NUESTRAS</p>
-          <p className="h2">OBRAS</p>
+          <p className="h2">NUESTRAS<br/>OBRAS</p>          
         </div>
         <div className="obras">
-        {obras.map ((el, i) => {
-          return (
-            <Obra obra={el} key={i} id={i+1}/>
-          )
-        })}
+          {obras.map ((el, i) => {
+            return (
+              <Obra obra={el} key={i} id={i+1}/>
+            )
+          })}
         </div>        
         <Asesoramiento/>
 

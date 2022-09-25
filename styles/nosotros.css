@@ -67,15 +67,24 @@
 /* query */
 @media screen and (max-width: 768px) {
   .mision div:first-child {
-    grid-column: span 12;    
-    
+    grid-column: span 12;  
   }
 
   .equipoItem {
     grid-column: span 12; 
     border-top: 1px solid rgb(123, 123, 133); 
-    
   }  
+
+  .comentariosTitle {
+    grid-column: 1 / span 12;  
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .comentariosContainer {
+    grid-column: 1 / span 12;       
+  }
+  
 }
 
 
