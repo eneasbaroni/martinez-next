@@ -42,7 +42,7 @@
   margin-top: 10vh;
   padding-bottom: 5rem;
   border-bottom: var(--main-border);
-  display: grid;
+  display: grid;  
   grid-template-columns: repeat(12, 1fr);   
 }
 
@@ -55,12 +55,19 @@
   display: grid;
   align-items: center;
   align-content: center;
-  grid-template-columns: repeat(2, 1fr);   
+  grid-template-columns: repeat(2, 1fr);  
+  gap: 1rem; 
 }
 
 .comentariosContainer p {      
   grid-column: auto / span 1;
+  grid-row: auto / span 1;
+  padding: 1rem;
+  border-radius: 1rem;
+  height: 100%;  
+  align-self: center !important;
   margin-bottom: 1rem;
+  background-color: #1778bd1e;
 }
 
 
@@ -75,6 +82,11 @@
     border-top: 1px solid rgb(123, 123, 133); 
   }  
 
+  .comentarios {
+    padding-bottom: 1rem;
+    border-bottom: none;      
+  }
+
   .comentariosTitle {
     grid-column: 1 / span 12;  
     text-align: center;
@@ -82,8 +94,11 @@
   }
 
   .comentariosContainer {
-    grid-column: 1 / span 12;       
+    grid-column: 1 / span 12;
+    text-align: center;       
   }
+
+ 
   
 }
 
