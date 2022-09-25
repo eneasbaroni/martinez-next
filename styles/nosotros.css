@@ -43,7 +43,7 @@
 }
 
 .comentarios {
-  margin-top: 10vh;
+  margin-top: 1rem;
   padding-bottom: 5rem;
   border-bottom: var(--main-border);
   display: grid;  
