@@ -21,8 +21,14 @@
 
 .navItem {
   padding: 0 0.5rem;
-  font-size: 0.7rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.navItemActive a {
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .headerLateral {  
