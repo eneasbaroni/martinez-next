@@ -43,17 +43,17 @@ const Home = ({obrasSeleccionadas}) => {
   return (
     <Layout>
       <main className="divContainer" style={{opacity: `${opacity}`}}>
-        <h1 className="h1 px-md-5 px-3 mainh1">DESARROLLAMOS PROYECTOS LLAVE EN MANO ACORDES A TUS NECESIDADES</h1>
+        <h1 className="h1 px-md-5 px-3 mainh1">TU PROYECTO LLAVE EN MANO<br/>EN NUESTRAS MANOS</h1>
         <p className="px-md-5 px-3 mb-5 mainP">Desarollando el sueño de la casa propia desde 2000</p>
         <div className="mainBanner"><Image layout="fill" objectFit="cover" src='/images/mainBanner.png' alt="baner"/></div>
         <div className="px-md-5 px-3 row">
           <div className="mainTitle pt-5"> 
             <div>
-              <p className="h2">OBRAS</p>
-              <p className="h2">SELECCIONADAS</p>
+              <p className="h2">OBRAS</p>              
             </div>
             <div>          
-              <p className="selectedText pb-3">Contamos con la experiencia,  de un proceso eficiente y el coraje para afrontar cualquier reto con la alegría, responsabilidad y la determinación que nos define.</p>          
+              {/* <p className="selectedText pb-3">Contamos con la experiencia,  de un proceso eficiente y el coraje para afrontar cualquier reto con la alegría, responsabilidad y la determinación que nos define.</p>           */}
+              <p className="selectedText pb-3">Desarrollamos tu proyecto con la responsabilidad y la determinación que nos define.</p>          
             </div>
           </div>
           

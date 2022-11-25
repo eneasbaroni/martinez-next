@@ -23,19 +23,35 @@ export const getStaticProps = async () => {
       comentario: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis magni eum fugit exercitationem id rerum alias officiis in provident explicabo?",
       img: "/images/equipo/Juan.jpg",
     }
-  ]   
+  ]
+  
+  const tareas = [
+    {
+      nombre: 'vivienda',
+      descripcion: 'Gestionamos soluciones integrales con opción de construcción por etapas o llave en mano.'
+    },
+    {
+      nombre: 'PROYECTO DE INVERSIÓN',
+      descripcion: 'Evaluamos el mercado de acuerdo al proyecto a desarrollar, con el objetivo de lograr un balance óptimo en relación precio calidad.'
+    },
+    {
+      nombre: 'PROYECTO LLAVE EN MANO PARA MUNICIPIOS O GRANDES EMPRESAS',
+      descripcion: 'Ofrecemos nuestros servicios para la construcción de tandas de viviendas de calidad estandarizada'
+    }
+  ]
   
   
   return {
     props: {
-      equipo
+      equipo, 
+      tareas
     },
     revalidate: 3600
   } 
 }
 
 
-const Nosotros = ({equipo}) => {
+const Nosotros = ({equipo, tareas}) => {
 
   const [opacity, setOpacity] = useState(0)
 
@@ -55,18 +71,38 @@ const Nosotros = ({equipo}) => {
         <div className="main px-md-5 px-3 row">
 
           <div className="mainTitle">
-            <p className="h2">ESPECIALISTAS <br/> EN VIVIENDAS</p>            
+            <p className="h2">LIDERES EN CONSTRUCCION LLAVE EN MANO</p>            
           </div>
 
           
           <div  className="mainBanner"><Image src='/images/nosotrosBanner.jpg' layout="fill" alt="baner"/></div>
 
           <div className="sectionContainer mision">
-            <div>
-              <p className="h2">NUESTRA MISION</p>
-              <p>Texto que hable de la mision y los objetivos de la empresa ... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus iste aut nam accusamus itaque nemo sequi dolore tenetur, quibusdam quidem amet quis incidunt! Iste sapiente quia modi iure quis voluptates, quisquam eveniet suscipit dolor quaerat aspernatur accusamus, libero impedit veritatis laboriosam blanditiis commodi. Dolores odio voluptate in, soluta nobis omnis!</p>
+            <div>              
+              <p>Bienvenido a Martinez Rubiano.</p>
+              <p>Somos una empresa constructora con sede en Villa María, Córdoba, Argentina que cumple sueños de grandes y pequeños inversores desde el año 2000.</p>
+              <p>Nuestra experiencia es el resultado de ofrecer calidad y el mejor servicio a cada paso, haciendo de la experiencia de construir, una experiencia transparecte y placentera.</p>
+              <p>La mejora continua, la innovación y la confianza son nuestros motores para construir un futuro mejor para todos.</p>
             </div>
             
+          </div>
+          
+
+          <div className="sectionContainer equipo borderBottom">
+
+            <p className="h2 equipoContainerTitle">QUE HACEMOS</p>
+
+            {tareas.map ((el, i) => {
+                return (
+                  <div className="equipoItem" key={i} >                    
+                    <div className="equipoInfo">
+                      <p className="equipoTitle">{el.nombre.toUpperCase()}</p>
+                      <p className="equipoP">{el.descripcion}</p>                      
+                    </div>
+                  </div> 
+                )
+            })}
+
           </div>
 
           <div className="sectionContainer equipo borderBottom">
@@ -79,7 +115,7 @@ const Nosotros = ({equipo}) => {
                     <div className="equipoInfo">
                       <p className="equipoTitle">{el.nombre.toUpperCase()}</p>
                       <p className="equipoP">{el.cargo}</p>
-                      <p className="equipoP">{el.comentario}</p>
+                      {/* <p className="equipoP">{el.comentario}</p> */}
                     </div>
                   </div> 
                 )
@@ -89,8 +125,8 @@ const Nosotros = ({equipo}) => {
 
           <div className="comentarios">
             <div className="comentariosTitle">
-              <p className="h2">COMENTARIO </p>
-              <p className="h2">DE CLIENTES</p>
+              <p className="h2">LO QUE DICEN </p>
+              <p className="h2">NUESTROS CLIENTES</p>
             </div>
             <div className="comentariosContainer">
               <p>&quot;ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit&quot;</p>
