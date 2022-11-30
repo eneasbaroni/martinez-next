@@ -15,7 +15,8 @@ const Obra = ({obra, id}) => {
   
   return (
     <div className={`row obraContainer ${border}`}>
-      <div  className="obraImage col-12"><Image src={obra.images[0]} objectFit='cover' layout='fill' alt="Imagen de la Obra"/></div>
+      {/* <div  className="obraImage col-12"><Image src={obra.images[0]} objectFit='cover' layout='fill' alt="Imagen de la Obra"/></div> */}
+      <div  className="obraImage col-12"><Link href={`/obras/${obra.id}`}><Image src={obra.images[0]} objectFit='cover' layout='fill' alt="Imagen de la Obra"/></Link></div>
       <div className="obraNombre col-12">{obra.nombre}</div>
       <div className="obraTipo col-12">{obra.tipo}</div>
       <div className="obraAnio col-6">{obra.año}</div>
