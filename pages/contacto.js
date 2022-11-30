@@ -86,16 +86,16 @@ const Contacto = () => {
           </div> */}
 
           <div className="sectionContainer">
-            <div className='contacDataContainer'>
+            {/* <div className='contacDataContainer'>
             <h3 className="contacTitle">Contacto</h3>
             <p className="contacData">San Juan 462 (Local 1) - Villa Maria - CBA</p>
             <p className="contacData">3535085782 - 3534128373</p>
             <p className="contacData">info@martinezrubiano.com.ar</p>
-            </div>
+            </div> */}
             
             <form className="formulario" onSubmit={sendData}>
               
-              <legend className="formTitle">Formulario de Contacto</legend>        
+              <legend className="formTitle">FORMULARIO DE CONTACTO</legend>        
               <Input placeholder="Nombre" name="nombre" label="Nombre" foo={handleInputChange}/>        
               <Input placeholder="Apellido" name="apellido" label="Apellido" foo={handleInputChange}/>
               <Input placeholder="Telefono (sin guiones, sin 0 y sin 15)" name="telefono" label="Telefono" foo={handleInputChange}/>

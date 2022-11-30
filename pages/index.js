@@ -44,7 +44,7 @@ const Home = ({obrasSeleccionadas}) => {
     <Layout>
       <main className="divContainer" style={{opacity: `${opacity}`}}>
         <h1 className="h1 px-md-5 px-3 mainh1">TU PROYECTO LLAVE EN MANO<br/>EN NUESTRAS MANOS</h1>
-        <p className="px-md-5 px-3 mb-5 mainP">Desarollando el sueño de la casa propia desde 2000</p>
+        <p className="px-md-5 px-3 mb-5 mainP">Desarollando el sueño de la casa propia desde el año 2000</p>
         <div className="mainBanner"><Image layout="fill" objectFit="cover" src='/images/mainBanner.png' alt="baner"/></div>
         <div className="px-md-5 px-3 row">
           <div className="mainTitle pt-5"> 

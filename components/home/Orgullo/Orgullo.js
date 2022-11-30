@@ -3,7 +3,7 @@ const Orgullo = () => {
     <div className="orgulloContainer row justify-content-between">
       <div className="orgulloTitle">
         <p className="h2">ORGULLOSOS DE NUESTRO TRABAJO</p>
-        <p>Nuestra principal prioridad es la felicidad y conformidad de nuestros clientes. Es por ello que estamos constantemente buscando las soluciones mas optimas para que se adapten a la necesidad de cada uno de los usuarios</p>
+        <p>Nuestra prioridad es la felicidad de nuestros clientes y es por eso que constantemente estamos buscando las soluciones optimas para cada necesidad.</p>        
       </div>
 
       <div className="orgulloInfoContainer">
