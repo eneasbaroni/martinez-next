@@ -1,7 +1,7 @@
 const db = [
   {
     id: '1',
-    nombre: "La Rufina",
+    nombre: "Jardines del Hípico II",
     año: "2022",
     superficie: "250m²",
     tipo: "Casa de Familia",
@@ -9,19 +9,19 @@ const db = [
     seleccionada: true,
     images:[
       "/images/obras/Obra 01/01.jpg",    
+      "/images/obras/Obra 01/08.jpg",    
       "/images/obras/Obra 01/02.jpg",    
       "/images/obras/Obra 01/03.jpg",    
       "/images/obras/Obra 01/04.jpg",    
       "/images/obras/Obra 01/05.jpg",    
       "/images/obras/Obra 01/06.jpg",    
       "/images/obras/Obra 01/07.jpg",    
-      "/images/obras/Obra 01/08.jpg",    
       "/images/obras/Obra 01/09.jpg"    
     ]
   },
   {
     id: '2',
-    nombre: "El Terron",
+    nombre: "Jardines del Hípico III",
     año: "2021",
     superficie: "250m²",
     tipo: "Casa de Familia",
@@ -36,12 +36,16 @@ const db = [
       "/images/obras/Obra 02/06.jpg",    
       "/images/obras/Obra 02/07.jpg",    
       "/images/obras/Obra 02/08.jpg",    
-      "/images/obras/Obra 02/09.jpg"     
+      "/images/obras/Obra 02/09.jpg",     
+      "/images/obras/Obra 02/10.jpg",     
+      "/images/obras/Obra 02/11.jpg",     
+      "/images/obras/Obra 02/12.jpg",     
+      "/images/obras/Obra 02/13.jpg"     
     ]
   },
   {
     id: '3',
-    nombre: "Casa Lopez",
+    nombre: "Jardines del Hípico IV",
     año: "2020",
     superficie: "250m²",
     tipo: "Casa de Familia",
@@ -61,7 +65,7 @@ const db = [
   },
   {
     id: '4',
-    nombre: "Casa Rocanto",
+    nombre: "Valle Escondido",
     año: "2020",
     superficie: "250m²",
     tipo: "Casa de Familia",
@@ -76,12 +80,17 @@ const db = [
       "/images/obras/Obra 04/06.jpg",    
       "/images/obras/Obra 04/07.jpg",    
       "/images/obras/Obra 04/08.jpg",    
-      "/images/obras/Obra 04/09.jpg"       
+      "/images/obras/Obra 04/09.jpg",       
+      "/images/obras/Obra 04/10.jpg",       
+      "/images/obras/Obra 04/11.jpg",       
+      "/images/obras/Obra 04/12.jpg",       
+      "/images/obras/Obra 04/13.jpg",       
+      "/images/obras/Obra 04/14.jpg",       
     ]
   },
   {
     id: '5',
-    nombre: "Gianuzzo",
+    nombre: "Villa Albertina",
     año: "2021",
     superficie: "250m²",
     tipo: "Casa de Familia",
@@ -96,12 +105,17 @@ const db = [
       "/images/obras/Obra 05/06.jpg",    
       "/images/obras/Obra 05/07.jpg",    
       "/images/obras/Obra 05/08.jpg",    
-      "/images/obras/Obra 05/09.jpg"      
+      "/images/obras/Obra 05/09.jpg",       
+      "/images/obras/Obra 05/10.jpg",       
+      "/images/obras/Obra 05/11.jpg",       
+      "/images/obras/Obra 05/12.jpg",       
+      "/images/obras/Obra 05/13.jpg",       
+      "/images/obras/Obra 05/14.jpg",       
     ]
   },
   {
     id: '6',
-    nombre: "El Pueblo",
+    nombre: "Vista Verde I",
     año: "2021",
     superficie: "250m²",
     tipo: "Casa de Familia",
@@ -116,12 +130,30 @@ const db = [
       "/images/obras/Obra 06/06.jpg",    
       "/images/obras/Obra 06/07.jpg",    
       "/images/obras/Obra 06/08.jpg",    
-      "/images/obras/Obra 06/09.jpg"    
+      "/images/obras/Obra 06/09.jpg",       
+      "/images/obras/Obra 06/10.jpg",       
+      "/images/obras/Obra 06/11.jpg",       
+      "/images/obras/Obra 06/12.jpg",       
+      "/images/obras/Obra 06/13.jpg",       
+      "/images/obras/Obra 06/14.jpg",   
+      "/images/obras/Obra 06/15.jpg",   
+      "/images/obras/Obra 06/16.jpg",   
+      "/images/obras/Obra 06/17.jpg",   
+      "/images/obras/Obra 06/18.jpg",   
+      "/images/obras/Obra 06/19.jpg",   
+      "/images/obras/Obra 06/20.jpg",   
+      "/images/obras/Obra 06/21.jpg",   
+      "/images/obras/Obra 06/22.jpg",   
+      "/images/obras/Obra 06/23.jpg",   
+      "/images/obras/Obra 06/24.jpg",   
+      "/images/obras/Obra 06/25.jpg",   
+      "/images/obras/Obra 06/26.jpg",   
+      "/images/obras/Obra 06/27.jpg",   
     ]
   },
   {
     id: '7',
-    nombre: "Tarraubella",
+    nombre: "Vista Verde II",
     año: "2020",
     superficie: "250m²",
     tipo: "Casa de Familia",
@@ -136,12 +168,17 @@ const db = [
       "/images/obras/Obra 07/06.jpg",    
       "/images/obras/Obra 07/07.jpg",    
       "/images/obras/Obra 07/08.jpg",    
-      "/images/obras/Obra 07/09.jpg"      
+      "/images/obras/Obra 07/09.jpg",      
+      "/images/obras/Obra 07/10.jpg",      
+      "/images/obras/Obra 07/11.jpg",      
+      "/images/obras/Obra 07/12.jpg",      
+      "/images/obras/Obra 07/13.jpg",      
+      "/images/obras/Obra 07/14.jpg"      
     ]
   },
   {
     id: '8',
-    nombre: "Casa Salomon",
+    nombre: "Aguas Claras I",
     año: "2020",
     superficie: "250m²",
     tipo: "Casa de Familia",
@@ -161,22 +198,25 @@ const db = [
   },
   {
     id: '9',
-    nombre: "Punta Peñon",
+    nombre: "Aguas Claras II",
     año: "2020",
     superficie: "250m²",
     tipo: "Casa de Familia",
     descripcion: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam",
     seleccionada: false,
     images:[
-      "/images/obras/Obra 10/01.jpg",    
-      "/images/obras/Obra 10/02.jpg",    
-      "/images/obras/Obra 10/03.jpg",    
-      "/images/obras/Obra 10/04.jpg",    
-      "/images/obras/Obra 10/05.jpg",    
-      "/images/obras/Obra 10/06.jpg",    
-      "/images/obras/Obra 10/07.jpg",    
-      "/images/obras/Obra 10/08.jpg",    
-      "/images/obras/Obra 10/09.jpg"      
+      "/images/obras/Obra 09/01.jpg",    
+      "/images/obras/Obra 09/02.jpg",    
+      "/images/obras/Obra 09/03.jpg",    
+      "/images/obras/Obra 09/04.jpg",    
+      "/images/obras/Obra 09/05.jpg",    
+      "/images/obras/Obra 09/06.jpg",    
+      "/images/obras/Obra 09/07.jpg",    
+      "/images/obras/Obra 09/08.jpg",    
+      "/images/obras/Obra 09/09.jpg",      
+      "/images/obras/Obra 09/10.jpg",      
+      "/images/obras/Obra 09/11.jpg",      
+      "/images/obras/Obra 09/12.jpg",      
     ]
   },
 ]
