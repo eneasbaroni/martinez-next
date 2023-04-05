@@ -8,15 +8,15 @@ const db = [
     descripcion: "Esta casa ha sido diseñada y construida de manera personalizada, según las necesidades y preferencias específicas del cliente. El proceso de diseño ha sido llevado a cabo por un equipo de arquitectos y diseñadores que trabajan en estrecha colaboración con el cliente para entender sus requerimientos y crear una vivienda que se adapte a su estilo de vida y personalidad. El diseño personalizado permite una mayor flexibilidad y creatividad en el proceso de construcción, lo que significa que cada detalle, desde la distribución de los espacios hasta la selección de los materiales y acabados, se ha considerado cuidadosamente para satisfacer las necesidades y gustos del cliente. El resultado final es una casa única y personalizada que refleja la individualidad del cliente",
     seleccionada: true,
     images:[
-      "/images/obras/Obra 01/01.jpg",    
-      "/images/obras/Obra 01/08.jpg",    
-      "/images/obras/Obra 01/02.jpg",    
-      "/images/obras/Obra 01/03.jpg",    
-      "/images/obras/Obra 01/04.jpg",    
-      "/images/obras/Obra 01/05.jpg",    
-      "/images/obras/Obra 01/06.jpg",    
-      "/images/obras/Obra 01/07.jpg",    
-      "/images/obras/Obra 01/09.jpg"    
+      "/images/obras/obra_01/01.jpg",    
+      "/images/obras/obra_01/08.jpg",    
+      "/images/obras/obra_01/02.jpg",    
+      "/images/obras/obra_01/03.jpg",    
+      "/images/obras/obra_01/04.jpg",    
+      "/images/obras/obra_01/05.jpg",    
+      "/images/obras/obra_01/06.jpg",    
+      "/images/obras/obra_01/07.jpg",    
+      "/images/obras/obra_01/09.jpg"    
     ]
   },
   {
