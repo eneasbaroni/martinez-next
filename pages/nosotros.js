@@ -18,11 +18,30 @@ export const getStaticProps = async () => {
       img: "/images/equipo/Carlos.jpg",
     },
     {
-      nombre: "Juan Lopez",
-      cargo: "Gerente General",
+      nombre: "Cristian Velazquez",
+      cargo: "Arquitecto",
       comentario: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis magni eum fugit exercitationem id rerum alias officiis in provident explicabo?",
       img: "/images/equipo/Juan.jpg",
-    }
+    },
+    {
+      nombre: "Fernando Brussa",
+      cargo: "Director Comercial",
+      comentario: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis magni eum fugit exercitationem id rerum alias officiis in provident explicabo?",
+      img: "/images/equipo/Juan.jpg",
+    },
+    {
+      nombre: "Edgar García",
+      cargo: "Supervisor General de Obras",
+      comentario: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis magni eum fugit exercitationem id rerum alias officiis in provident explicabo?",
+      img: "/images/equipo/Juan.jpg",
+    },
+    {
+      nombre: "Hugo Quevedo",
+      cargo: "Encargado de Logística y Post Venta",
+      comentario: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis magni eum fugit exercitationem id rerum alias officiis in provident explicabo?",
+      img: "/images/equipo/Juan.jpg",
+    },
+    
   ]
   
   const tareas = [

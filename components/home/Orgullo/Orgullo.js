@@ -10,15 +10,15 @@ const Orgullo = () => {
 
         <div className="orgulloInfo ">
           <div className="my-2">
-            <p className="h2">25</p>
+            <p className="h2">36</p>
             <p>Obras terminadas</p>
           </div>
           <div className="my-2">
-            <p className="h2">15</p>
+            <p className="h2">23</p>
             <p>Obras en ejecución</p>
           </div>
           <div className="my-2">
-            <p className="h2">32</p>
+            <p className="h2">36</p>
             <p>Familias felices</p>
           </div>
           <div className="my-2">
