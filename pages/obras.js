@@ -39,8 +39,13 @@ const Obras = ({obras}) => {
     if (savedScrollY !== null) {
       console.log('detectó el scroll', savedScrollY);
       setTimeout(() => {
-      window.scrollTo(0, savedScrollY);
-      }, 300);
+      /* scroll behaivor smooth */
+      window.scrollTo({
+        top: savedScrollY,
+        left: 0,
+        behavior: 'smooth'
+      });      
+      }, 10);
     } else {
       window.scrollTo(0, 0);
     }
