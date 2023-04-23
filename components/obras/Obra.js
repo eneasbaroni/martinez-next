@@ -20,7 +20,7 @@ const Obra = ({obra, id}) => {
       <div className="obraNombre col-12">{obra.nombre}</div>
       <div className="obraTipo col-12">{obra.tipo}</div>
       <div className="obraAnio col-6">{obra.año}</div>
-      <Link href={`/obras/${obra.id}`}><div className="col-6 text-end obraVer">Ver Galeria →</div></Link>
+      <Link href={`/obras/${obra.id}`}><div className="col-6 text-end obraVer">Ver Galería →</div></Link>
   </div>
   )
 }

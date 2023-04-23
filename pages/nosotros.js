@@ -30,7 +30,7 @@ export const getStaticProps = async () => {
       img: "/images/equipo/Juan.jpg",
     },
     {
-      nombre: "Edgar García",
+      nombre: "Edgar Garcia",
       cargo: "Supervisor General de Obras",
       comentario: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis magni eum fugit exercitationem id rerum alias officiis in provident explicabo?",
       img: "/images/equipo/Juan.jpg",
@@ -50,7 +50,7 @@ export const getStaticProps = async () => {
       descripcion: 'Gestionamos soluciones integrales con opción de construcción por etapas o llave en mano.'
     },
     {
-      nombre: 'PROYECTO DE INVERSIÓN',
+      nombre: 'PROYECTO DE INVERSION',
       descripcion: 'Evaluamos el mercado de acuerdo al proyecto a desarrollar, con el objetivo de lograr un balance óptimo en relación precio calidad.'
     },
     {
