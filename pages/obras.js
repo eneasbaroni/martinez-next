@@ -30,15 +30,15 @@ const Obras = ({obras}) => {
   const [scrollY, setScrollY] = useState(0);
 
   const router = useRouter()
-  const { pathname } = router;  
-  
+  const { pathname } = router;   
 
   useEffect(() => {   
     /* verificar si está guardado el scroll en la session */
     const savedScrollY = sessionStorage.getItem('scrollY');
     console.log('savedScrollY', savedScrollY);
     if (savedScrollY !== null) {
-      window.scrollTo(0, JSON.parse(savedScrollY));
+      console.log('detectó el scroll');
+      window.scrollTo(0, savedScrollY);
     } else {
       window.scrollTo(0, 0);
     }
