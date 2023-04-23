@@ -37,13 +37,13 @@ const Obras = ({obras}) => {
     const savedScrollY = sessionStorage.getItem('scrollY');
     console.log('savedScrollY', savedScrollY);
     if (savedScrollY !== null) {
-      console.log('detectó el scroll');
+      console.log('detectó el scroll', savedScrollY);
       window.scrollTo(0, savedScrollY);
     } else {
       window.scrollTo(0, 0);
     }
     setOpacity(1);    
-  }, []);
+  }, [pathname]);
 
   const savedScrollY = () =>  {    
     /* guardar scrollY en sessionStorage */
