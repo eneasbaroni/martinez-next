@@ -55,7 +55,9 @@ const Contacto = () => {
       /* resetear formulario */
       form.current.reset();  
       setLoading(false) 
-      alert('Mensaje enviado con éxito!')   
+      setTimeout(() => {
+        alert('Mensaje enviado con éxito!')   
+      }, 100);
     })
     .catch((err) => {      
       form.current.reset();    
