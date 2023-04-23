@@ -38,7 +38,9 @@ const Obras = ({obras}) => {
     console.log('savedScrollY', savedScrollY);
     if (savedScrollY !== null) {
       console.log('detectó el scroll', savedScrollY);
+      setTimeout(() => {
       window.scrollTo(0, savedScrollY);
+      }, 300);
     } else {
       window.scrollTo(0, 0);
     }
