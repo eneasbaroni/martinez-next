@@ -12,7 +12,7 @@ const Asesoramiento = () => {
           <p className="selectedText pb-3">¿Necesita una respuesta rápida? Nuestros asesores están para ayudarle. ¡Contáctenos!</p>   
           <div className="astoBtns">
             <div className="pb-1">
-            <a href={"https://wa.me/+5493535085782"} target="_blank">
+            <a href={"https://wa.me/+5493535085782"} rel="noreferrer" target="_blank">
               <div className="mediaButton"> whatsapp →</div> 
             </a>      
             </div>
