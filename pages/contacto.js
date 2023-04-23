@@ -1,6 +1,8 @@
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Layout from "../components/Layout/Layout"
+import {sendForm} from '@emailjs/browser';
+import Loader from "../components/Loader/Loader";
 
 const Input = ({placeholder, name, label, foo}) => { 
   return (
@@ -13,7 +15,7 @@ const Input = ({placeholder, name, label, foo}) => {
 
 
 const Contacto = () => {
-
+  const [loading, setLoading] = useState(false)
   const [contact, setContact] = useState({
     nombre:"",
     apellido:"",
@@ -21,6 +23,8 @@ const Contacto = () => {
     email:"",
     comentario:""
   }) 
+
+  const form = useRef();
 
   // Expresiones regulares para los campos del formulario
   // const nombreRegex = /^[\s\S]{2,25}$/i   
@@ -35,34 +39,30 @@ const Contacto = () => {
       ...contact,
       [event.target.name] : event.target.value
     })
-  } 
+  }  
 
   const sendData = (e) => {
-    e.preventDefault();   
-    console.log('SUCCESS!', contact);    
-  }
-
-/*   const sendData = (e) => {
-    e.preventDefault();    
-    send(
-      //los keys de emailJS https://www.emailjs.com/
-      process.env.REACT_APP_JS_SERVICE_ID,
-      process.env.REACT_APP_JS_TEMPLATE_IDB,
-      user,
-      process.env.REACT_APP_JS_USER_ID 
+    e.preventDefault();  
+    setLoading(true)     
+    
+    sendForm(
+      process.env.NEXT_PUBLIC_SERVICE_ID,
+      process.env.NEXT_PUBLIC_TEMPLATE_ID,
+      form.current,
+      process.env.NEXT_PUBLIC_USER_ID      
     )
-    .then((response) => {
-      console.log('SUCCESS!', response.status, response.text);
-      //navigate("/success")
+     .then((response) => {
+      /* resetear formulario */
+      form.current.reset();  
+      setLoading(false) 
+      alert('Mensaje enviado con éxito!')   
     })
-    .catch((err) => {
-      
+    .catch((err) => {      
+      form.current.reset();    
+      setLoading(false)  
       console.log('FAILED...', err);
     });
-  } */
-
-
-
+  }    
 
   const [opacity, setOpacity] = useState(0)
 
@@ -79,6 +79,7 @@ const Contacto = () => {
   return ( 
 
     <Layout>
+      {loading && <Loader/>}
       <main className="divContainer row" style={{opacity: `${opacity}`}}>
         <div className="main contactoContainer align-items-end col-12 px-md-5 px-3 row">
           {/* <div className="mainTitle col-12 row">
@@ -93,14 +94,14 @@ const Contacto = () => {
             <p className="contacData">info@martinezrubiano.com.ar</p>
             </div> */}
             
-            <form className="formulario" onSubmit={sendData}>
+            <form className="formulario" ref={form} onSubmit={sendData}>
               
               <legend className="formTitle">FORMULARIO DE CONTACTO</legend>        
               <Input placeholder="Nombre" name="nombre" label="Nombre" foo={handleInputChange}/>        
               <Input placeholder="Apellido" name="apellido" label="Apellido" foo={handleInputChange}/>
-              <Input placeholder="Telefono (sin guiones, sin 0 y sin 15)" name="telefono" label="Telefono" foo={handleInputChange}/>
+              <Input placeholder="Teléfono (sin guiones, sin 0 y sin 15)" name="telefono" label="Telefono" foo={handleInputChange}/>
               <Input placeholder="E-mail" name="email" label="Email" foo={handleInputChange}/> 
-              <Input placeholder="Dejanos un Mensaje" name="comentario" label="Mensaje" foo={handleInputChange}/> 
+              <Input placeholder="Dejanos tu consulta" name="comentario" label="Mensaje" foo={handleInputChange}/> 
 
               {nombreRegex.test(contact.nombre) && apellidoRegex.test(contact.apellido) && telefonoRegex.test(contact.telefono) && emailRegex.test(contact.email) && comentarioRegex.test(contact.descripcion)
                 ?<button className="enviarBtn" type="submit">Enviar</button>        

@@ -43,7 +43,11 @@ const Header = () => {
   return (
     <div className="container-fluid row">
       <div className="col-12 header justify-content-between align-items-center">
-        <Link href={"/"}  className="navItem"><><Image src='/images/icon2.svg' alt="icon" height={75} width={110} className="icon"/></></Link>
+        <Link href={"/"}  className="navItem" passHref>
+          <a>
+            <Image src='/images/icon2.svg' alt="icon" height={75} width={110} className="icon"/>
+          </a>    
+        </Link>
         {windowSize < 576 
           ?
             <div className="menuIcon"><Image className="menuIcon" width={25} height={25} src='/images/menu.svg' alt="menu" onClick={openMenu}/></div>      

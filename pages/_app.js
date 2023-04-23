@@ -9,6 +9,7 @@ import "../styles/nosotros.css"
 import "../styles/contacto.css" 
 import "../styles/obra.css" 
 import "../styles/socials.css" 
+import "../styles/Loader.css" 
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 

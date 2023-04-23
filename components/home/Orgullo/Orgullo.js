@@ -3,7 +3,7 @@ const Orgullo = () => {
     <div className="orgulloContainer row justify-content-between">
       <div className="orgulloTitle">
         <p className="h2">ORGULLOSOS DE NUESTRO TRABAJO</p>
-        <p>Nuestra prioridad es la felicidad de nuestros clientes y es por eso que constantemente estamos buscando las soluciones optimas para cada necesidad.</p>        
+        <p>Nuestra prioridad es la felicidad de nuestros clientes y es por eso que constantemente estamos buscando las soluciones óptimas para cada necesidad.</p>        
       </div>
 
       <div className="orgulloInfoContainer">
@@ -15,7 +15,7 @@ const Orgullo = () => {
           </div>
           <div className="my-2">
             <p className="h2">23</p>
-            <p>Obras en ejecución</p>
+            <p>Obras en construcción</p>
           </div>
           <div className="my-2">
             <p className="h2">36</p>

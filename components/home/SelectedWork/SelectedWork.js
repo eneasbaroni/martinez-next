@@ -13,8 +13,8 @@ const SelectedWork = ({obra}) => {
         <Link href={`/obras/${obra.id}`}><div className="col-12 workVer">Ver Galeria →</div></Link>
       </div>
       <div className="row imagesContainer">
-        <div className="obraImg"><Image src={obra.images[0]} layout='fill' objectFit="cover" alt="Imagen de la Obra"/></div>
-        <div className="obraImg"><Image src={obra.images[1]} layout='fill' objectFit="cover" alt="Imagen de la Obra"/></div>
+        <div className="obraImg"><Image src={obra.images[0]} layout='fill' objectFit="cover" alt="Casa construccion tradicional"/></div>
+        <div className="obraImg"><Image src={obra.images[1]} layout='fill' objectFit="cover" alt="Casa construccion tradicional"/></div>
       </div>
 
     </div>

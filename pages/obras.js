@@ -27,16 +27,28 @@ export const getStaticProps = async () => {
 
 const Obras = ({obras}) => {
   const [opacity, setOpacity] = useState(0)
+  const [scrollY, setScrollY] = useState(0);
 
   const router = useRouter()
-  const { pathname } = router;
+  const { pathname } = router;  
   
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    setOpacity(1)
-  }, [pathname]);
+  useEffect(() => {   
+    /* verificar si está guardado el scroll en la session */
+    const savedScrollY = sessionStorage.getItem('scrollY');
+    console.log('savedScrollY', savedScrollY);
+    if (savedScrollY !== null) {
+      window.scrollTo(0, JSON.parse(savedScrollY));
+    } else {
+      window.scrollTo(0, 0);
+    }
+    setOpacity(1);    
+  }, []);
 
+  const savedScrollY = () =>  {    
+    /* guardar scrollY en sessionStorage */
+    sessionStorage.setItem('scrollY', JSON.stringify(window.scrollY));    
+  }
 
 
   return (
@@ -46,10 +58,10 @@ const Obras = ({obras}) => {
         <div className="mainTitle">
           <p className="h2">NUESTRAS<br/>OBRAS</p>          
         </div>
-        <div className="obras">
+        <div className="obras" onClick={savedScrollY}>
           {obras.map ((el, i) => {
             return (
-              <Obra obra={el} key={i} id={i+1}/>
+              <Obra obra={el} key={i} id={i+1} />
             )
           })}
         </div>        

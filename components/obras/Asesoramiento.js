@@ -9,13 +9,17 @@ const Asesoramiento = () => {
       </div>
       <div className=""> 
         <div className="mainContactContainer row">            
-          <p className="selectedText pb-3">¿Necesita una respuesta rápida? Nuestros asesores están preparados para ayudarle, cuando lo necesite.</p>   
+          <p className="selectedText pb-3">¿Necesita una respuesta rápida? Nuestros asesores están para ayudarle. ¡Contáctenos!</p>   
           <div className="astoBtns">
             <div className="pb-1">
-              <div className="mediaButton"> whatsapp →</div>       
+            <a href={"https://wa.me/+5493535085782"} target="_blank">
+              <div className="mediaButton"> whatsapp →</div> 
+            </a>      
             </div>
             <div className="pb-1 ms-2">
-              <div className="mediaButton"> email →</div>       
+            <a href="mailto:info@martinezrubiano.com.ar">
+              <div className="mediaButton"> email →</div> 
+              </a>      
             </div>
                   
           </div>

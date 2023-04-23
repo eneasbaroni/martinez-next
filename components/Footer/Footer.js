@@ -13,7 +13,11 @@ const Footer = () => {
           <p className="col-12">info@martinezrubiano.com.ar</p>
         </div>       
         <div className="col-12 text-center mt-2">
-          <div className="mailIcon"><Image layout='fill'  src='/images/mailIcon.svg' alt="mailIcon"/></div>
+          <div className="mailIcon">
+            <a href="mailto:info@martinezrubiano.com.ar">
+              <Image layout='fill'  src='/images/mailIcon.svg' alt="mailIcon"/>
+            </a>
+          </div>
           <p className="col-12">© 2022. Todos los derechos reservados</p>
         </div>
 

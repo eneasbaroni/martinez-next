@@ -25,7 +25,7 @@ const db = [
     año: "2021",
     superficie: "110m²",
     tipo: "Casa / Vivienda",
-    descripcion: "Casa diseñada y construida con el objetivo de maximizar el valor de renta mensual para el propietario, respetando un presupuesto específico. La tipología se ha seleccionado cuidadosamente para lograr este objetivo, tomando en cuenta las necesidades y preferencias del mercado de alquiler.",
+    descripcion: "Esta casa ha sido diseñada y construida teniendo en cuenta el objetivo de maximizar el valor de renta mensual para el propietario, con un presupuesto específico para la obra. La tipología de la casa se ha seleccionado cuidadosamente para lograr este objetivo, tomando en cuenta las necesidades y preferencias del mercado de alquiler.",
     seleccionada: false,
     images:[
       "/images/obras/obra_02/01.jpg",    
@@ -49,7 +49,7 @@ const db = [
     año: "2021",
     superficie: "110m²",
     tipo: "Casa / Vivienda",
-    descripcion: "Casa diseñada y construida con el objetivo de maximizar el valor de renta mensual para el propietario, respetando un presupuesto específico. La tipología se ha seleccionado cuidadosamente para lograr este objetivo, tomando en cuenta las necesidades y preferencias del mercado de alquiler.",
+    descripcion: "Esta casa ha sido diseñada y construida teniendo en cuenta el objetivo de maximizar el valor de renta mensual para el propietario, con un presupuesto específico para la obra. La tipología de la casa se ha seleccionado cuidadosamente para lograr este objetivo, tomando en cuenta las necesidades y preferencias del mercado de alquiler.",
     seleccionada: false,
     images:[
       "/images/obras/obra_03/01.jpg",    
@@ -69,7 +69,7 @@ const db = [
     año: "2021",
     superficie: "110m²",
     tipo: "Casa / Vivienda",
-    descripcion: "Casa diseñada y desarrollada con el objetivo de ser comercializada en el mercado inmobiliario. Para lograrlo, se ha llevado a cabo un análisis de mercado exhaustivo y una segmentación precisa de los posibles compradores, para entender sus necesidades, preferencias y crear una oferta que satisfaga sus expectativas. El diseño de la casa se ha optimizado para ofrecer un equilibrio entre funcionalidad, estética y rentabilidad, utilizando materiales y acabados de alta calidad  dentro de un presupuesto específico.",
+    descripcion: "casa ha sido diseñada y desarrollada con el objetivo principal de ser comercializada en el mercado inmobiliario. Para lograrlo, se ha llevado a cabo un análisis de mercado exhaustivo y una segmentación precisa de los posibles compradores, para entender sus necesidades y preferencias y crear una oferta que satisfaga sus expectativas. El diseño de la casa se ha optimizado para ofrecer un equilibrio entre funcionalidad, estética y rentabilidad, utilizando materiales y acabados de alta calidad pero dentro de un presupuesto específico para la obra. Esto ha permitido maximizar el valor de la propiedad sin exceder el precio de venta deseado.",
     seleccionada: false,
     images:[
       "/images/obras/obra_04/01.jpg",    
@@ -94,7 +94,7 @@ const db = [
     año: "2022",
     superficie: "100m²",
     tipo: "Casa / Vivienda",
-    descripcion: "Casa diseñada y construida de manera personalizada. El proceso de diseño ha sido llevado a cabo por un equipo de arquitectos y diseñadores, en estrecha colaboración con el cliente para entender sus requerimientos y así crear una vivienda que se adapte a su estilo de vida y personalidad. El resultado final es una casa única, ya que el diseño personalizado permite una mayor flexibilidad y creatividad en el proceso de construcción, lo que significa que cada detalle, desde la distribución de los espacios hasta la selección de los materiales y acabados, se ha considerado cuidadosamente.",
+    descripcion: "Esta casa ha sido diseñada y construida de manera personalizada, según las necesidades y preferencias específicas del cliente. El proceso de diseño ha sido llevado a cabo por un equipo de arquitectos y diseñadores que trabajan en estrecha colaboración con el cliente para entender sus requerimientos y crear una vivienda que se adapte a su estilo de vida y personalidad. El diseño personalizado permite una mayor flexibilidad y creatividad en el proceso de construcción, lo que significa que cada detalle, desde la distribución de los espacios hasta la selección de los materiales y acabados, se ha considerado cuidadosamente para satisfacer las necesidades y gustos del cliente. El resultado final es una casa única y personalizada que refleja la individualidad del cliente",
     seleccionada: true,
     images:[
       "/images/obras/obra_05/01.jpg",    
@@ -119,7 +119,7 @@ const db = [
     año: "2020",
     superficie: "140m²",
     tipo: "Casa / Vivienda",
-    descripcion: "Casa diseñada y construida de manera personalizada. El proceso de diseño ha sido llevado a cabo por un equipo de arquitectos y diseñadores, en estrecha colaboración con el cliente para entender sus requerimientos y así crear una vivienda que se adapte a su estilo de vida y personalidad. El resultado final es una casa única, ya que el diseño personalizado permite una mayor flexibilidad y creatividad en el proceso de construcción, lo que significa que cada detalle, desde la distribución de los espacios hasta la selección de los materiales y acabados, se ha considerado cuidadosamente.",
+    descripcion: "Esta casa ha sido diseñada y construida de manera personalizada, según las necesidades y preferencias específicas del cliente. El proceso de diseño ha sido llevado a cabo por un equipo de arquitectos y diseñadores que trabajan en estrecha colaboración con el cliente para entender sus requerimientos y crear una vivienda que se adapte a su estilo de vida y personalidad. El diseño personalizado permite una mayor flexibilidad y creatividad en el proceso de construcción, lo que significa que cada detalle, desde la distribución de los espacios hasta la selección de los materiales y acabados, se ha considerado cuidadosamente para satisfacer las necesidades y gustos del cliente. El resultado final es una casa única y personalizada que refleja la individualidad del cliente",
     seleccionada: false,
     images:[
       "/images/obras/obra_06/01.jpg",    
@@ -157,7 +157,7 @@ const db = [
     año: "2020",
     superficie: "120m²",
     tipo: "Casa / Vivienda",
-    descripcion: "Casa diseñada y construida de manera personalizada. El proceso de diseño ha sido llevado a cabo por un equipo de arquitectos y diseñadores, en estrecha colaboración con el cliente para entender sus requerimientos y así crear una vivienda que se adapte a su estilo de vida y personalidad. El resultado final es una casa única, ya que el diseño personalizado permite una mayor flexibilidad y creatividad en el proceso de construcción, lo que significa que cada detalle, desde la distribución de los espacios hasta la selección de los materiales y acabados, se ha considerado cuidadosamente.",
+    descripcion: "Esta casa ha sido diseñada y construida de manera personalizada, según las necesidades y preferencias específicas del cliente. El proceso de diseño ha sido llevado a cabo por un equipo de arquitectos y diseñadores que trabajan en estrecha colaboración con el cliente para entender sus requerimientos y crear una vivienda que se adapte a su estilo de vida y personalidad. El diseño personalizado permite una mayor flexibilidad y creatividad en el proceso de construcción, lo que significa que cada detalle, desde la distribución de los espacios hasta la selección de los materiales y acabados, se ha considerado cuidadosamente para satisfacer las necesidades y gustos del cliente. El resultado final es una casa única y personalizada que refleja la individualidad del cliente",
     seleccionada: true,
     images:[
       "/images/obras/obra_07/01.jpg",    
@@ -182,7 +182,7 @@ const db = [
     año: "2021",
     superficie: "140m²",
     tipo: "Casa / Vivienda",
-    descripcion: "Casa diseñada y construida de manera personalizada. El proceso de diseño ha sido llevado a cabo por un equipo de arquitectos y diseñadores, en estrecha colaboración con el cliente para entender sus requerimientos y así crear una vivienda que se adapte a su estilo de vida y personalidad. El resultado final es una casa única, ya que el diseño personalizado permite una mayor flexibilidad y creatividad en el proceso de construcción, lo que significa que cada detalle, desde la distribución de los espacios hasta la selección de los materiales y acabados, se ha considerado cuidadosamente.",
+    descripcion: "Esta casa ha sido diseñada y construida de manera personalizada, según las necesidades y preferencias específicas del cliente. El proceso de diseño ha sido llevado a cabo por un equipo de arquitectos y diseñadores que trabajan en estrecha colaboración con el cliente para entender sus requerimientos y crear una vivienda que se adapte a su estilo de vida y personalidad. El diseño personalizado permite una mayor flexibilidad y creatividad en el proceso de construcción, lo que significa que cada detalle, desde la distribución de los espacios hasta la selección de los materiales y acabados, se ha considerado cuidadosamente para satisfacer las necesidades y gustos del cliente. El resultado final es una casa única y personalizada que refleja la individualidad del cliente",
     seleccionada: false,
     images:[
       "/images/obras/obra_08/01.jpg",    
@@ -202,7 +202,7 @@ const db = [
     año: "2021",
     superficie: "82m²",
     tipo: "Casa / Vivienda",
-    descripcion: "Casa diseñada y construida de manera personalizada. El proceso de diseño ha sido llevado a cabo por un equipo de arquitectos y diseñadores, en estrecha colaboración con el cliente para entender sus requerimientos y así crear una vivienda que se adapte a su estilo de vida y personalidad. El resultado final es una casa única, ya que el diseño personalizado permite una mayor flexibilidad y creatividad en el proceso de construcción, lo que significa que cada detalle, desde la distribución de los espacios hasta la selección de los materiales y acabados, se ha considerado cuidadosamente.",
+    descripcion: "Esta casa ha sido diseñada y construida de manera personalizada, según las necesidades y preferencias específicas del cliente. El proceso de diseño ha sido llevado a cabo por un equipo de arquitectos y diseñadores que trabajan en estrecha colaboración con el cliente para entender sus requerimientos y crear una vivienda que se adapte a su estilo de vida y personalidad. El diseño personalizado permite una mayor flexibilidad y creatividad en el proceso de construcción, lo que significa que cada detalle, desde la distribución de los espacios hasta la selección de los materiales y acabados, se ha considerado cuidadosamente para satisfacer las necesidades y gustos del cliente. El resultado final es una casa única y personalizada que refleja la individualidad del cliente",
     seleccionada: false,
     images:[
       "/images/obras/obra_09/01.jpg",    
