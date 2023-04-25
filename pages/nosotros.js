@@ -99,7 +99,7 @@ const Nosotros = ({equipo, tareas}) => {
           <div className="sectionContainer mision">
             <div>              
               <p>Bienvenido a Martinez Rubiano.</p>
-              <p>Somos una empresa constructora con sede en Villa María, Córdoba, Argentina que cumple sueños de grandes y pequeños inversores desde el año 2020.</p>
+              <p>Somos una empresa constructora con sede en Villa María, Córdoba, Argentina que cumple sueños de grandes y pequeños inversores desde el año 2016.</p>
               <p>Nuestra experiencia es el resultado de ofrecer calidad y el mejor servicio a cada paso, haciendo de la experiencia de construir, una experiencia transparente y placentera.</p>
               <p>La mejora continua, la innovación y la confianza son nuestros motores para construir un futuro mejor para todos.</p>
             </div>

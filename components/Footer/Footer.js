@@ -9,7 +9,7 @@ const Footer = () => {
         </div>
         <div className="col-12 text-center mt-2">
           <p className="col-12">Tucumán 1597 - Villa María - Córdoba</p>
-          <p className="col-12">3535085782 - 3534128373</p>
+          <p className="col-12">3534203441</p>
           <p className="col-12">info@martinezrubiano.com.ar</p>
         </div>       
         <div className="col-12 text-center mt-2">
@@ -18,7 +18,7 @@ const Footer = () => {
               <Image layout='fill'  src='/images/mailIcon.svg' alt="mailIcon"/>
             </a>
           </div>
-          <p className="col-12">© 2022. Todos los derechos reservados</p>
+          <p className="col-12">© 2023. Todos los derechos reservados</p>
         </div>
 
       </div>
