@@ -26,7 +26,7 @@ It has Home, Products, Works, Contact and About sections.
 
 ## Built with 🛠️ 
 
-* React JS for Frontend
+* Next JS for Frontend
 * Node JS and Express for Backend
 * EmailJS for email management 
 
